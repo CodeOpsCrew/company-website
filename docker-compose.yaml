@@ -1,0 +1,9 @@
+services:
+  site:
+    build:
+      context: .
+    image: nginx
+    ports:
+      - 8088:80
+    volumes:
+      - ./:/usr/share/nginx/html:rw
